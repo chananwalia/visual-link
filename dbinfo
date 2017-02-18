@@ -1,0 +1,57 @@
+connectionName: visual-link:instance1
+currentDiskSize: '281811817'
+databaseVersion: MYSQL_5_6
+etag: '"BAg4XvF9oO4T-BUHYn9IlSYpXHc/MQ"'
+instance: instance1
+instanceType: CLOUDSQL_INSTANCE
+IMPORTANT--- ipv6Address: 2001:4860:4864:1:5745:7561:da2d:1c6c
+kind: sql#instance
+maxDiskSize: '268435456000'
+project: visual-link
+region: us-central
+serverCaCert:
+  cert: |-
+    -----BEGIN CERTIFICATE-----
+    MIIDITCCAgmgAwIBAgIBADANBgkqhkiG9w0BAQUFADBIMSMwIQYDVQQDExpHb29n
+    bGUgQ2xvdWQgU1FMIFNlcnZlciBDQTEUMBIGA1UEChMLR29vZ2xlLCBJbmMxCzAJ
+    BgNVBAYTAlVTMB4XDTE3MDIxODEwMTQwM1oXDTE5MDIxODEwMTUwM1owSDEjMCEG
+    A1UEAxMaR29vZ2xlIENsb3VkIFNRTCBTZXJ2ZXIgQ0ExFDASBgNVBAoTC0dvb2ds
+    ZSwgSW5jMQswCQYDVQQGEwJVUzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC
+    ggEBAIHBAhP5IK77I4x/jtgKA5uB3G6WE8PmP+xUXVrifacTNIncMWHdYgmxynMh
+    R+aZQv29fOAdWhVhWlx13CcycLD1rJAQmzwN52oXshyrBMJyxKXoApFNqX4exbiG
+    +VNi1/E/C179NQvNZuD+8XI23LAxZj/ffR5qMwCRA8GQejQbSh37gG1jUxnxxVbN
+    hx+ilq14qAMgvpLgEiikwZf75i+quPqrA7riS0Zf0u47pxu/5reOtNjrAFAm5U1Z
+    CC7nfgH1lLMXrlO+SmrT6fSuxp0GihXGdOwYp6cpMN85XAu8CX2782+NCbap9IWk
+    UNyDJeOKZKQu3KUbgvXlDqdP72UCAwEAAaMWMBQwEgYDVR0TAQH/BAgwBgEB/wIB
+    ADANBgkqhkiG9w0BAQUFAAOCAQEAFi8ZXM2l2hF2HRi3h/fATBYD7kGmmoo6Gusx
+    Y9nBfKh91zLp+sPjYBFyIP9VMBlF6AHvpS+hStiRze7f4jdo/jOPK25xZjyNFP97
+    ayed/+lBizZVwZJBKF1KrekpfmOpA8v0Nk1pNk2z4vQWxO9Uv7AQDTePm7/8Wps2
+    7sQEMO3htDkOjl0LuESYThbq1ULuq/TEuZ78Rf4gUdgXULMj+agzTpjMubk5fheE
+    jHVU5d9pQI10Spdiee2Sub+XIrJHqfGICj62doMXtlcpbvsKzzqT5/hQz53XJBaD
+    iOC3pDmkiC5Dlk6dGXR58kDaj5kZcU8xervUjmrYiNOPb5PM3A==
+    -----END CERTIFICATE-----
+  certSerialNumber: '0'
+  commonName: C=US,O=Google\, Inc,CN=Google Cloud SQL Server CA
+  createTime: '2017-02-18T10:14:03.369000+00:00'
+  expirationTime: '2019-02-18T10:15:03.369000+00:00'
+  instance: instance1
+  kind: sql#sslCert
+  sha1Fingerprint: 0e4f5be95ca8451311859f80a04630a055978ea0
+settings:
+  activationPolicy: ON_DEMAND
+  backupConfiguration:
+  - enabled: false
+    id: e5c78af2-0b41-4d4a-9c72-909ffc12b0f7
+    kind: sql#backupConfiguration
+    startTime: '16:00'
+  ipConfiguration:
+    enabled: false
+    kind: sql#ipConfiguration
+  kind: sql#settings
+  pricingPlan: PER_USE
+  replicationType: SYNCHRONOUS
+  settingsVersion: '1'
+  tier: D0
+state: RUNNABLE
+
+pswd visual-link
