@@ -12,7 +12,7 @@ $(document).ready(function() {
     // $("#selections").hide();
 
     for (var i = 0; i < animals.length; i++) {
-    	$("#selection-group").append('<div class="col-md-4"><a href="#" class="animal-selection" id="' + animals[i] + '"><div class="selection-button">' + animals[i] + '<img class="selection-image" src="http://vignette3.wikia.nocookie.net/clubpenguin/images/a/a9/Penguin_Player_card_look_1222333.png/revision/latest?cb=20140723221416" height="150px"></div></a></div>');
+    	$("#selection-group").append('<div class="col-md-4"><a href="#" class="animal-selection" id="' + animals[i] + '"><div class="selection-button"><img class="selection-image" src="assets/img/' + animals[i] + '.png" height="150px"></div></a></div>');
     }
 
     $("#selection-group").on("click", ".animal-selection", function() {
@@ -23,7 +23,7 @@ $(document).ready(function() {
     	$("#color-tab").addClass("active");
     	$("#selection-group").empty();
     	for (var i = 0; i < colors.length; i++) {
-    		$("#selection-group").append('<div class="col-md-4"><a href="#" class="color-selection" id="' + colors[i] + '"><div class="selection-button">' + colors[i] + '<img class="selection-image" src="http://vignette3.wikia.nocookie.net/clubpenguin/images/a/a9/Penguin_Player_card_look_1222333.png/revision/latest?cb=20140723221416" height="150px"></div></a></div>');	
+    		$("#selection-group").append('<div class="col-md-4"><a href="#" class="color-selection" id="' + colors[i] + '"><div class="selection-button" style="background-color: ' + colors[i] + '"><img class="selection-image" src="assets/img/' + selected_animal + '.png" height="150px"></div></a></div>');	
     	}
     });
 
@@ -35,7 +35,7 @@ $(document).ready(function() {
     	$("#bg-tab").addClass("active");
     	$("#selection-group").empty();
     	for (var i = 0; i < bgs.length; i++) {
-    		$("#selection-group").append('<div class="col-md-4"><a href="#" class="bg-selection" id="' + bgs[i] + '"><div class="selection-button">' + bgs[i] + '<img class="selection-image" src="http://vignette3.wikia.nocookie.net/clubpenguin/images/a/a9/Penguin_Player_card_look_1222333.png/revision/latest?cb=20140723221416" height="150px"></div></a></div>');	
+    		$("#selection-group").append('<div class="col-md-4"><a href="#" class="bg-selection" id="' + bgs[i] + '"><div class="selection-button" style="background-image: url(\'assets/img/' + bgs[i] + '.jpg\'); background-size: 130%; background-position: center center; background-repeat: no-repeat"><img class="selection-image" src="assets/img/' + selected_animal + '.png" height="150px"></div></a></div>');
     	}
     });
 
