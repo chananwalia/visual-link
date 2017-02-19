@@ -15,7 +15,7 @@
 
 	if ($response) {
 		while ($row = mysqli_fetch_array($response)) {
-			if ($currtime > strtotime($row['expire-time'])) {
+			if ($currtime > strtotime($row['expire_time'])) {
 				die("No link for this combo!");
 			}
 			// update hit count

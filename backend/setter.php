@@ -10,7 +10,7 @@
 		$link = $_GET["link"];
 	}
 
-	if $link = "" {
+	if ($link == "") {
 		//error
 		DIE ("You didn't enter a link!");
 	} else {
@@ -26,7 +26,7 @@
 		// get all combos in the db
 		$now = time();
 		$db_combos = array();
-		$query = "SELECT * FROM thdb WHERE from_unixtime({$now}) < expire-time";
+		$query = "SELECT * FROM thdb WHERE from_unixtime({$now}) < expire_time";
 		$response = @mysqli_query($dbc, $query);
 		while ($row = mysqli_fetch_array($response)) {
 			$db_combos[] = $row['color'] . "_" . $row['animal'] . "_" . $row['bg'];
@@ -37,7 +37,7 @@
 		foreach ($colors as $c) {
 			foreach ($animals as $a) {
 				foreach ($bgs as $b) {
-					$all_combos[] = $c . "_" $a . "_" $b;
+					$all_combos[] = $c . "_" . $a . "_" . $b;
 				}
 			}
 		}
@@ -67,7 +67,7 @@
 
 
 		$expiration = date('Y-m-d H:i:s', $now + 259200); // default is to expire in 3 days.
-		$query = "INSERT INTO thdb (link, color, animal, bg, expire-time) 
+		$query = "INSERT INTO thdb (link, color, animal, bg, expire_time) 
 			VALUES (?, ?, ?, ?, ?)";
 		$stmt = mysqli_prepare($dbc, $query);
 		mysqli_stmt_bind_param($stmt, "sssss", $link, $fields[0], $fields[1], $fields[2], $expiration);
