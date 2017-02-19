@@ -8,7 +8,7 @@
 	$animal = $_GET["animal"];
 	$bg = $_GET["bg"];
 
-	$query = "SELECT link FROM thdb WHERE color = {$color} AND animal = {$animal} AND bg = {$bg} ORDER BY -id LIMIT 1";
+	$query = "SELECT link FROM thdb WHERE color = '{$color}' AND animal = '{$animal}' AND bg = '{$bg}' ORDER BY -id LIMIT 1";
 	$response = @mysqli_query($dbc, $query);
 
 	$currtime = time();
@@ -21,7 +21,7 @@
 			print json_encode(array("link"=>$row['link']));
 		}
 	} else {
-		die("No link for this combo!");
+		die("No link for this combo! :(");
 	}
 
 ?>
