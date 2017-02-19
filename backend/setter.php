@@ -60,6 +60,7 @@
 				$y++;
 			}
 		}
+		$new_combos = $new_combos + array_slice($all_combos, $y); // all remaining combos are possible
 
 		//generate random combo
 		$r = rand(0, count($new_combos) - 1);
@@ -73,6 +74,7 @@
 		mysqli_stmt_bind_param($stmt, "sssss", $link, $fields[0], $fields[1], $fields[2], $expiration);
 		mysqli_stmt_execute($stmt);
 		mysqli_stmt_close($stmt);
+		print json_encode(array("color"=>$fields[0],"animal"=>$fields[1],"bg"=>$fields[2]));
 		mysqli_close($dbc);
 	}
 
