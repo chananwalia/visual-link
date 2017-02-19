@@ -1,0 +1,17 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.selection-button {
+	width: 80%;
+	height: 200px;
+	padding: 10px;
+	background-color: gray;
+}
+
+.selection-image {
+	display: block;
+	margin: auto;
+	height: 100%;
+	vertical-align: middle;
+}
