@@ -16,6 +16,86 @@
 	vertical-align: middle;
 }
 
+glyph {
+    display: block;
+    margin: auto;
+    width:  200px;
+    height: 200px;
+}
+
+glyph.dog {
+  -webkit-mask: url(../assets/img/dog.png) no-repeat 100% 100%;
+  mask: url(../assets/img/dog.png) no-repeat 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: white;
+}
+
+glyph.cat {
+  -webkit-mask: url(../assets/img/cat.png) no-repeat 100% 100%;
+  mask: url(../assets/img/cat.png) no-repeat 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: white;
+}
+
+glyph.elephant {
+  -webkit-mask: url(../assets/img/elephant.png) no-repeat 100% 100%;
+  mask: url(../assets/img/elephant.png) no-repeat 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: white;
+}
+
+glyph.monkey {
+  -webkit-mask: url(../assets/img/monkey.png) no-repeat 100% 100%;
+  mask: url(../assets/img/monkey.png) no-repeat 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: white;
+}
+
+glyph.penguin {
+  -webkit-mask: url(../assets/img/penguin.png) no-repeat 100% 100%;
+  mask: url(../assets/img/penguin.png) no-repeat 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: white;
+}
+
+glyph.whale {
+  -webkit-mask: url(../assets/img/whale.png) no-repeat 100% 100%;
+  mask: url(../assets/img/whale.png) no-repeat 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: white;
+}
+
+glyph.unicorn {
+  -webkit-mask: url(../assets/img/unicorn.png) no-repeat 100% 100%;
+  mask: url(../assets/img/unicorn.png) no-repeat 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: white;
+}
+
+glyph.pig {
+  -webkit-mask: url(../assets/img/pig.png) no-repeat 100% 100%;
+  mask: url(../assets/img/pig.png) no-repeat 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: white;
+}
+
+glyph.turtle {
+  -webkit-mask: url(../assets/img/turtle.png) no-repeat 100% 100%;
+  mask: url(../assets/img/turtle.png) no-repeat 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: white;
+}
+
+
 body, html {
 	margin: 0;
 	font-family: Raleway;
