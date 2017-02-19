@@ -29,4 +29,6 @@
 		die("No link for this combo! :(");
 	}
 
+	mysqli_close($dbc);
+
 ?>
