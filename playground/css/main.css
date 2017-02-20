@@ -2,11 +2,60 @@
    Author's custom styles
    ========================================================================== */
 
+body, html {
+	margin: 0;
+	font-family: Avenir Next;
+	background-color: #A9E2F3;
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+	color: white;
+}
+
+h3 {
+	margin-top: 0px;
+}
+
+#link-input {
+	width: 60%;
+	height: 50px;
+	font-size: 20px;
+	border-radius: 15px;
+}
+
+#create-submit {
+	width: 25%;
+	height: 50px;
+	font-size: 20px;
+	border-radius: 15px;
+}
+
+.nav-link {
+	font-family: Avenir;
+	font-weight: bold;
+	font-size: 30px;
+	color: white;
+	padding: 5px;
+}
+
+.nav-link.active {
+	border-bottom: 6px solid white;
+	padding-bottom: 2px;
+}
+
+.nav-link:hover, .nav-link:focus {
+	border-bottom: 6px solid white;
+	padding-bottom: 2px;
+	color: white;
+	text-decoration: none;
+}
+
 .selection-button {
-	width: 80%;
-	height: 200px;
+	width: 90%;
+	height: 225px;
 	padding: 10px;
+	margin: 10px auto;
 	background-color: #fff;
+	border-radius: 50px;
 }
 
 .selection-image {
@@ -16,12 +65,105 @@
 	vertical-align: middle;
 }
 
-body, html {
-	margin: 0;
-	font-family: Raleway;
-	background-color: #A9E2F3;
-	-webkit-font-smoothing: antialiased;
+#result-image {
+	display: block;
+	margin: 0 auto;
+	width: 400px;
+	height: 225px;
+	vertical-align: middle;
+	border-radius: 50px;
 }
+
+glyph {
+    display: block;
+    margin: auto;
+    width:  200px;
+    height: 200px;
+    /*text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;*/
+    bottom: 5px;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+}
+
+glyph:hover {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+glyph.dog {
+  -webkit-mask: url(../assets/img/dog.png) no-repeat 100% 100%;
+  mask: url(../assets/img/dog.png) no-repeat 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: white;
+}
+
+glyph.cat {
+  -webkit-mask: url(../assets/img/cat.png) no-repeat 100% 100%;
+  mask: url(../assets/img/cat.png) no-repeat 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: white;
+}
+
+glyph.elephant {
+  -webkit-mask: url(../assets/img/elephant.png) no-repeat 100% 100%;
+  mask: url(../assets/img/elephant.png) no-repeat 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: white;
+}
+
+glyph.monkey {
+  -webkit-mask: url(../assets/img/monkey.png) no-repeat 100% 100%;
+  mask: url(../assets/img/monkey.png) no-repeat 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: white;
+}
+
+glyph.penguin {
+  -webkit-mask: url(../assets/img/penguin.png) no-repeat 100% 100%;
+  mask: url(../assets/img/penguin.png) no-repeat 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: white;
+}
+
+glyph.whale {
+  -webkit-mask: url(../assets/img/whale.png) no-repeat 100% 100%;
+  mask: url(../assets/img/whale.png) no-repeat 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: white;
+}
+
+glyph.unicorn {
+  -webkit-mask: url(../assets/img/unicorn.png) no-repeat 100% 100%;
+  mask: url(../assets/img/unicorn.png) no-repeat 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: white;
+}
+
+glyph.pig {
+  -webkit-mask: url(../assets/img/pig.png) no-repeat 100% 100%;
+  mask: url(../assets/img/pig.png) no-repeat 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: white;
+}
+
+glyph.turtle {
+  -webkit-mask: url(../assets/img/turtle.png) no-repeat 100% 100%;
+  mask: url(../assets/img/turtle.png) no-repeat 100% 100%;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: white;
+}
+
 
 #navbar {
 	background-color: #fff;
