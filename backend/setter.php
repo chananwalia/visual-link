@@ -26,10 +26,16 @@
 		// get all combos in the db
 		$now = time();
 		$db_combos = array();
+		$fields = array();
 		$query = "SELECT * FROM thdb WHERE from_unixtime({$now}) < expire_time";
 		$response = @mysqli_query($dbc, $query);
 		while ($row = mysqli_fetch_array($response)) {
 			$db_combos[] = $row['color'] . "_" . $row['animal'] . "_" . $row['bg'];
+			if ($link == $row['link']) {
+				$fields[0] = $row['color'];
+				$fields[1] = $row['animal'];
+				$fields[2] = $row['bg'];
+			}
 		}
 
 		// generate all possible combos
@@ -64,7 +70,9 @@
 
 		//generate random combo
 		$r = rand(0, count($new_combos) - 1);
-		$fields = explode("_", $new_combos[$r]);
+		if (count($fields) == 0) {
+			$fields = explode("_", $new_combos[$r]);
+		}
 
 
 		$expiration = date('Y-m-d H:i:s', $now + 259200); // default is to expire in 3 days.
